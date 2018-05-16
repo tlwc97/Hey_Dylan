@@ -1,4 +1,4 @@
-## Set up Class ##
+## Create Class ##
 
 class furniture_item:
 
@@ -32,12 +32,10 @@ loveseat = furniture_item(name, description, price)
 
 my_purchase = loveseat.order_item(2)
 
-## Create receipt output ##
-
 receipt_string = ("Item: "  + my_purchase[0] + "\n")
-receipt_string = (receipt_string + "Price: " + my_purchase[1] + "\n")
+receipt_string = (receipt_string + "Price: " + str(my_purchase[1]) + "\n")
 receipt_string = (receipt_string + "Item Count: " + str(my_purchase[2]) + "\n")
-receipt_string = (receipt_string + "Total Price: " + my_purchase[3] + "\n")
+receipt_string = (receipt_string + "Total Price: " + str(my_purchase[3]) + "\n")
 
 print(receipt_string)
 
