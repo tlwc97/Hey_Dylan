@@ -42,5 +42,3 @@ print("Customer Two Items:")
 print(customer_two_itemization)
 print("Customer Two Total:")
 print(customer_two_total)
-
-pause
