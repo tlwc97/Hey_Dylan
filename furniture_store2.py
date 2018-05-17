@@ -23,7 +23,7 @@ class furniture_item:
 
 ## Define Item ##
 
-name = "lovely Loveseat"
+name = "Lovely Loveseat"
 description = "Lovely Loveseat. Tufted polyster blend on wood. 32 inches high x \
 40 inches wide x 30 inches deep. Red or white."
 price = 254.00

@@ -1,0 +1,41 @@
+#ground cost calucaltor
+def cost_ground(wght):
+  if wght <= 2:
+    cost = (wght * 1.50) + 20
+  elif wght > 2 and wght < 6:
+    cost = (wght * 3) + 20
+  elif wght > 6 and wght < 10:
+    cost = (wght * 4) + 20
+  elif wght > 10:
+    cost = (wght * 4.75) + 20
+  return cost
+#premium shipping costs is always 125$
+premium_shipping = 125
+
+#drone cost calulator
+def cost_drone(wght):
+  if wght <= 2:
+    cost = (wght * 4.50)
+  elif wght > 2 and wght < 6:
+    cost = (wght * 9)
+  elif wght > 6 and wght < 10:
+    cost = (wght * 12)
+  elif wght > 10:
+    cost = (wght * 14.25)
+  return cost
+
+
+def shipping_cost_method_calc(wght):
+  cost1 = cost_ground(wght)
+  cost2 = cost_drone(wght)
+  cost3 = premium_shipping
+  if cost1 < cost2 and cost1 < cost3:
+      print(str(cost1) + " is the cost of ground shipping which would be cheapest for you!")
+  elif cost2 < cost1 and cost2 < cost3:
+      print(str(cost2) + " is the cost of drone shipping which would be cheapest for you!")
+  elif cost3 < cost1 and cost3 < cost2:
+      print(str(cost3) + " is the cost of premium shipping which would be cheapest for you!")
+
+
+shipping_cost_method_calc(2)
+    
