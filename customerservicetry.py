@@ -2,7 +2,6 @@
 def cs_service_bot():
     print("Hello! Welcome to DNS Calble Company's Servie Portal. \n [1] New Customer \n [2] Existing Customer")
     response = input("Please choose an option")
-    pause
     if response == "1":
         new_customer_bot()
     elif response == "2" :
@@ -16,7 +15,7 @@ def existing_customer_bot():
     print("[1] Television support \n [2] Internet support \n [3] Speak to a Support Representative")
     response = input("What kind of support do you need?")
     if response == "1":
-        television_support():
+        television_support()
     elif response == "2":
         internet_support()
     elif response == "3":
@@ -66,20 +65,20 @@ def internet_support():
         print("Unplug your router, then plug it back in, then give it a good whack, like the Fonz.")
         did_that_help()
     elif response == "2":
-        print("Make sure that all cell phones and other peoples computers are not connected to the internet, so that you can have all the bandwidth.'')
+        print("Make sure that all cell phones and other peoples computers are not connected to the internet, so that you can have all the bandwidth.")
         did_that_help()
     elif response == "3":
         print("Move to a different region or install a VPN. Some areas block certain sites.")
         did_that_help()
     elif response == "4":
-        live_rep()
+        live_rep("support")
     else:
         print("Sorry, we did not understand your selection")
         internet_support()
 
 #to see if issue is solved
 def did_that_help():
-    response = input("Did that resolve the issue?)
+    response = input("Did that resolve the issue?")
     if response == "Yes" or "Y" or "Yea" or "Hell Yea":
         print("We were glad to help! Thank you for using DNS!")
     elif response == "No" or "fuck you" or "Nope" or "N":
