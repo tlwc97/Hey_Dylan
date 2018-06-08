@@ -118,7 +118,7 @@ def home_visit(purpose= "none"):
         elif purpose2 == "2":
             home_visit("service")
         elif purpose2 == "3":
-            home_visit("scouting")
+            home_visit("scout")
         else:
             print("Sorry, we didn't understand your selection.")
             home_visit()

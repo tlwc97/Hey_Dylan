@@ -1,4 +1,4 @@
-x = 8
+x = 3
 
 #if x < 5:
 #    print("less than 5")
@@ -8,5 +8,5 @@ x = 8
 
 if x < 5:
     print("less than 5")
-elif x < 10:
+if x < 10:
     print("less than 10")
