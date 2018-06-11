@@ -1,0 +1,7 @@
+def divisible_by_ten(nums):
+  numsDivisiblebyten = []
+  for i in nums:
+    if (i % 10 != 0):
+      numsDivisiblebyten.append(i)
+  print(len(numsDivisiblebyten))
+  return len(numsDivisiblebyten)
