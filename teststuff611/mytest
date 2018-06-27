@@ -1,3 +1,7 @@
+
+
+
+
 def divisible_by_ten(nums):
   numsDivisiblebyten = []
   for i in nums:
